@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
+import { CardItems } from './components/CardItems';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CardItems/>
+      <div>
+      <h1>
+        Example heading
+        <Badge bg="danger"  as={Button}>
+          New
+        </Badge>
+      </h1>
+    </div>
     </div>
   );
 }
